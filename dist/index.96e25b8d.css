@@ -114,6 +114,14 @@ td {
   padding: 0 5px;
 }
 
+footer {
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+  position: absolute;
+  bottom: 20px;
+}
+
 @media screen and (width <= 960px) {
   #results {
     width: 80%;
