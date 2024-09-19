@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="/weatherIndex.96e25b8d.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="input">
+        <h1>12-Hour Forecast</h1>
+        <label for="zipcode">Enter your zipcode: </label>
+        <input type="text" maxlength="5" id="zipcode">
+        <button id="submitZip" disabled="">Submit</button>
+        <div id="digitError">Please only enter digits</div>
+    </div>
+    
+    <div id="currentConditions">
+        <h2>Current Temperature: <a id="currentTemp"></a></h2>
+        <h3>Current Conditions: <a id="currentCondition"></a></h3>
+    </div>
+    
+    <div id="results">
+        <table>
+            <tr id="hours">
+                <td>Time</td>
+            </tr>
+            <tr id="temps">
+                <td>Temperature</td>
+            </tr>
+            <tr id="precipChances">
+                <td>Chance of Precipitation</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="/weatherIndex.5baa4167.js" defer=""></script>
+</body>
+</html>

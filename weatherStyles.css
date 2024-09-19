@@ -1,0 +1,122 @@
+:root {
+    --baby-blue: #ADD8E6;
+    --blue: #5c9aae;
+    --dark-blue: #2d6070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", system-ui;
+    color: var(--dark-blue);
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--baby-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "EB Garamond", system-ui;
+}
+
+#input {
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#input h1 {
+    padding-bottom: 10px;
+}
+
+#input input:not(h1){
+    font-size: 16px;
+}
+
+#input input {
+    border: 1px solid var(--blue);
+    padding: 2px;
+}
+
+#input button {
+    padding: 5px 5px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: white;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#input button:enabled:hover {
+    color: white;
+    background-color: var(--blue);
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#input button:disabled {
+    color: white;
+    background-color: #aaaaaaaa;
+    border: 1px solid #aaaaaaaa;
+    cursor: initial;
+}
+
+#digitError {
+    display: none;
+    padding: 5px;
+}
+
+#currentConditions {
+    display: none;
+    text-align: center;
+}
+
+#results {
+    display: none;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 80%;
+    padding: 10px 0;
+    margin: 0 auto;
+    border: 2px solid var(--baby-blue);
+    border-radius: 10px;
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 7px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(45,96,112,.75);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+#currentConditions a {
+    font-family: "EB Garamond", system-ui;
+}
+
+#currentConditions:nth-child(n) {
+    padding: 10px;
+}
+
+td {
+    white-space: nowrap;
+    padding: 0 5px;
+    text-align: center;
+}
+
+@media screen and (max-width:960px) {
+    #results {
+        width: 80%;
+    }
+}
