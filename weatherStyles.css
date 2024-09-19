@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     overflow-y: hidden;
     overflow-x: scroll;
-    width: 80%;
+    width: fit-content;
     padding: 10px 0;
     margin: 0 auto;
     border: 2px solid var(--baby-blue);

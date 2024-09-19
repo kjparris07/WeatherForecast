@@ -2,11 +2,10 @@
   "name": "weather",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel weatherIndex.html",
-    "build": "rm -rf .parcel-cache && parcel build weatherIndex.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +14,8 @@
     "buffer": "^6.0.3",
     "parcel": "^2.12.0",
     "process": "^0.11.10"
+  },
+  "dependencies": {
+    "axios": "^10.2.4"
   }
 }

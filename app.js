@@ -1,4 +1,3 @@
-import 'regenerator-runtime';
 import axios, { toFormData } from 'axios';
 
 const WEATHER_CODES = {
